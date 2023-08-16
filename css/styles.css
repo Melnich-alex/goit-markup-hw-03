@@ -30,6 +30,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 a:hover,
 a:focus {
@@ -285,5 +286,11 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 .visually-hidden {
-  display: none;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

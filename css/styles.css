@@ -17,6 +17,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .span-header {
   color: #2e2f42;
@@ -63,27 +64,23 @@ a:focus {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   border-radius: 4px;
-  background: var(--iris, #4d5ae5);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-left: 636px;
-  margin-right: 635px;
-  margin-bottom: 188px;
 }
 button:hover,
 button:focus {
   background-color: #404bbf;
 }
-.h-trio-name {
+.hiv-trio-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .h-trio-name-p {
   font-size: 16px;
@@ -150,19 +147,16 @@ a {
 ul {
   list-style-type: none;
 }
-.top-line-div {
+.container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 1440px;
-  height: 72px;
-  flex-shrink: 0;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .top-line-nav {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
 }
 .address {
@@ -170,26 +164,20 @@ ul {
   gap: 40px;
   flex-direction: row;
   justify-content: flex-start;
-  margin-left: 332px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding: 24px 0;
 }
 .ul-header {
   display: flex;
   gap: 40px;
   flex-direction: row;
   justify-content: flex-start;
-  margin-left: 76px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding: 24px 0;
 }
 .logo {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-left: 156px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding: 24px 0;
 }
 .dark-bg {
   display: flex;
@@ -200,31 +188,20 @@ ul {
   justify-content: center;
 }
 .h-one-name {
-  width: 496px;
-  margin-left: 472px;
-  margin-right: 472px;
-  margin-top: 188px;
-  margin-bottom: 48px;
+  max-width: 496px;
 }
 .light-content {
-  width: 1128px;
-  height: 104px;
-  flex-shrink: 0;
-  margin-top: 120px;
-  margin-right: 156px;
-  margin-bottom: 120px;
-  margin-left: 156px;
+  padding: 120px 0;
 }
-.h-ul-two {
+.hiv-ul-two {
   display: flex;
   gap: 24px;
 }
-.li-two {
-  display: flex;
-  width: 264px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+.liv-two {
+  width: calc((100% - 72px) / 4);
+}
+.hiv-trio-name {
+  margin-bottom: 8px;
 }
 .our-team-section {
   width: 1440px;
@@ -276,9 +253,7 @@ ul {
   flex-shrink: 0;
 }
 .dark-bg {
-  width: 1440px;
-  height: 312px;
-  flex-shrink: 0;
+  padding: 188px 0;
 }
 .div-footer {
   width: 264px;
@@ -305,4 +280,10 @@ img {
   display: block;
   max-width: 100%;
   object-fit: cover;
+}
+.header-body {
+  border-bottom: 1px solid #e7e9fc;
+}
+.visually-hidden {
+  display: none;
 }

@@ -92,25 +92,26 @@ button:focus {
 .our-team-section {
   background-color: #f4f4fd;
 }
-.h-two-our {
+.hruo-two-our {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .li-our {
   background-color: #ffffff;
 }
-.h-trio-our {
+.hruo-trio-our {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.p-our {
+.pour-our {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -215,17 +216,11 @@ ul {
 }
 .photo-two {
   display: flex;
-  flex-direction: row;
   gap: 24px;
-  justify-content: center;
 }
-.li-our {
-  display: inline-flex;
-  padding-bottom: 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+.lio-our {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .our-portfolio {
   width: 1128px;
@@ -286,11 +281,16 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 .visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  position: fixed;
+  transform: scale(0);
+}
+.divo-trio-li {
+  padding: 32px 0;
+}
+.hruo-trio-our {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.pour-our {
+  text-align: center;
 }
